@@ -1,0 +1,809 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    line-height: 1.5;
+
+    background:
+        radial-gradient(circle at 15% 20%, #d9ff9b 0%, transparent 20%),
+        radial-gradient(circle at 85% 30%, #f4ffb0 0%, transparent 22%),
+        radial-gradient(circle at 80% 80%, #baff7a 0%, transparent 25%),
+        linear-gradient(135deg, #5cff00, #a8ff78 50%, #efffdc);
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    position: relative;
+    overflow: hidden;
+
+    min-height: 230px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(255, 255, 255, .5) 0 35px,
+            transparent 36px
+        ),
+        radial-gradient(
+            circle at 90% 30%,
+            rgba(255, 255, 255, .3) 0 80px,
+            transparent 81px
+        ),
+        linear-gradient(
+            135deg,
+            #54ff00,
+            #9aff70,
+            #eaffc7
+        );
+
+    border-bottom: 2px solid rgba(255,255,255,.5);
+}
+
+header::before {
+    content: "";
+
+    position: absolute;
+
+    width: 250px;
+    height: 250px;
+
+    border-radius: 50%;
+
+    left: -100px;
+    top: -100px;
+
+    background: rgba(255,255,255,.25);
+
+    box-shadow:
+        500px 40px 0 rgba(255,255,255,.15),
+        800px 180px 0 rgba(255,255,255,.2);
+}
+
+header::after {
+    content: "";
+
+    position: absolute;
+
+    width: 400px;
+    height: 400px;
+
+    border-radius: 50%;
+
+    right: -200px;
+    bottom: -250px;
+
+    border: 2px solid rgba(120,255,0,.35);
+
+    box-shadow:
+        0 0 30px rgba(120,255,0,.3),
+        inset 0 0 30px rgba(255,255,255,.3);
+}
+
+header h1 {
+    position: relative;
+    z-index: 2;
+
+    font-size: 70px;
+    font-style: italic;
+    font-weight: bold;
+
+    color: white;
+
+    text-shadow:
+        0 4px 10px rgba(80,150,0,.25),
+        0 0 20px rgba(255,255,255,.5);
+
+    letter-spacing: 3px;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+nav {
+    padding: 18px 8%;
+
+    background: rgba(255,255,255,.25);
+
+    backdrop-filter: blur(10px);
+
+    border-bottom: 1px solid rgba(255,255,255,.5);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: .3s;
+}
+
+nav a:hover {
+    color: #dfff00;
+
+    text-shadow:
+        0 0 10px rgba(255,255,255,.8);
+}
+
+
+/* =========================
+   LOGIN
+========================= */
+
+.login {
+    position: relative;
+    overflow: hidden;
+
+    width: 90%;
+    max-width: 500px;
+
+    margin: 60px auto;
+
+    padding: 35px;
+
+    background:
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(255,255,255,.4) 0 45px,
+            transparent 46px
+        ),
+        radial-gradient(
+            circle at 90% 80%,
+            rgba(255,255,255,.3) 0 70px,
+            transparent 71px
+        ),
+        linear-gradient(
+            135deg,
+            #72ff20,
+            #b7ff91,
+            #eaffd8
+        );
+
+    backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255,255,255,.8);
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 15px 40px rgba(70,160,20,.2),
+        inset 0 1px 10px rgba(255,255,255,.4);
+}
+
+
+/* =========================
+   CADASTRO
+========================= */
+
+.cadastro {
+    position: relative;
+    overflow: hidden;
+
+    width: 90%;
+    max-width: 500px;
+
+    margin: 60px auto;
+
+    padding: 35px;
+
+    background:
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(255,255,255,.45) 0 45px,
+            transparent 46px
+        ),
+        radial-gradient(
+            circle at 90% 80%,
+            rgba(255,255,255,.35) 0 80px,
+            transparent 81px
+        ),
+        linear-gradient(
+            135deg,
+            #72ff20,
+            #b7ff91,
+            #eaffd8
+        );
+
+    border: 1px solid rgba(255,255,255,.8);
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 15px 40px rgba(70,160,20,.2),
+        inset 0 1px 10px rgba(255,255,255,.4);
+}
+
+
+/* círculos do cadastro */
+
+.cadastro::before {
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    border-radius: 50%;
+
+    top: -90px;
+    right: -70px;
+
+    background: rgba(255,255,255,.25);
+
+    box-shadow:
+        -250px 300px 0 rgba(255,255,255,.18),
+        -400px 100px 0 rgba(255,255,255,.12);
+}
+
+.cadastro::after {
+    content: "";
+
+    position: absolute;
+
+    width: 300px;
+    height: 100px;
+
+    left: -100px;
+    bottom: -40px;
+
+    border-radius: 50%;
+
+    border: 3px solid rgba(255,255,255,.25);
+
+    transform: rotate(-15deg);
+
+    box-shadow:
+        0 15px 0 rgba(255,255,255,.15),
+        0 30px 0 rgba(255,255,255,.1);
+}
+
+
+/* =========================
+   CONTATO
+========================= */
+
+.contato {
+    position: relative;
+    overflow: hidden;
+
+    width: 90%;
+    max-width: 500px;
+
+    margin: 60px auto;
+
+    padding: 35px;
+
+    background:
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(255,255,255,.4) 0 45px,
+            transparent 46px
+        ),
+        linear-gradient(
+            135deg,
+            #72ff20,
+            #b7ff91,
+            #eaffd8
+        );
+
+    border: 1px solid rgba(255,255,255,.8);
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 15px 40px rgba(70,160,20,.2);
+}
+
+
+/* =========================
+   TÍTULOS DOS FORMULÁRIOS
+========================= */
+
+.login h2,
+.cadastro h2,
+.contato h2 {
+    position: relative;
+    z-index: 2;
+
+    text-align: center;
+
+    margin-bottom: 25px;
+
+    font-size: 30px;
+
+    color: white;
+
+    text-shadow:
+        0 2px 8px rgba(70,120,20,.3);
+}
+
+
+/* =========================
+   FORMULÁRIOS
+========================= */
+
+.login form,
+.cadastro form,
+.contato form {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+label {
+    color: white;
+
+    font-weight: bold;
+
+    margin-top: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+
+    padding: 14px;
+
+    background: rgba(255,255,255,.8);
+
+    color: #47752d;
+
+    border: 1px solid rgba(255,255,255,.9);
+
+    border-radius: 12px;
+
+    outline: none;
+
+    font-size: 15px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #779665;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #6cff00;
+
+    box-shadow:
+        0 0 10px rgba(108,255,0,.5);
+}
+
+textarea {
+    min-height: 130px;
+
+    resize: vertical;
+}
+
+
+/* =========================
+   BOTÕES
+========================= */
+
+button {
+    margin-top: 15px;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #59ff00,
+            #9dff48
+        );
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 15px rgba(70,180,0,.25);
+
+    transition: .3s;
+}
+
+button:hover {
+    transform: translateY(-3px) scale(1.02);
+
+    box-shadow:
+        0 8px 25px rgba(70,220,0,.4);
+}
+
+
+/* =========================
+   LINKS DOS FORMULÁRIOS
+========================= */
+
+.login p,
+.cadastro p {
+    position: relative;
+    z-index: 2;
+
+    text-align: center;
+
+    margin-top: 15px;
+}
+
+.login a,
+.cadastro a {
+    color: white;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+.login a:hover,
+.cadastro a:hover {
+    color: #dfff00;
+}
+
+
+/* =========================
+   EM ALTA
+========================= */
+
+.em-alta {
+    position: relative;
+    overflow: hidden;
+
+    padding: 70px 8%;
+
+    background:
+        radial-gradient(
+            circle at 5% 90%,
+            rgba(255,255,255,.5) 0 60px,
+            transparent 61px
+        ),
+        radial-gradient(
+            circle at 95% 10%,
+            rgba(255,255,255,.3) 0 100px,
+            transparent 101px
+        ),
+        linear-gradient(
+            135deg,
+            #62ff00,
+            #aaff7c,
+            #efffdc
+        );
+}
+
+.em-alta > h2 {
+    color: white;
+
+    font-size: 35px;
+
+    text-shadow:
+        0 3px 10px rgba(50,130,0,.25);
+}
+
+.em-alta > p {
+    color: white;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   FILMES
+========================= */
+
+.filmes {
+    display: flex;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+.filme {
+    flex: 1;
+
+    min-width: 220px;
+
+    overflow: hidden;
+
+    background: rgba(255,255,255,.3);
+
+    backdrop-filter: blur(8px);
+
+    border-radius: 18px;
+
+    border: 1px solid rgba(255,255,255,.8);
+
+    box-shadow:
+        0 10px 30px rgba(60,150,20,.15);
+
+    transition: .3s;
+}
+
+.filme:hover {
+    transform: translateY(-10px) scale(1.02);
+
+    box-shadow:
+        0 15px 35px rgba(80,220,0,.3);
+}
+
+.filme h3 {
+    padding: 15px;
+
+    color: white;
+
+    text-shadow:
+        0 2px 5px rgba(0,0,0,.2);
+}
+
+
+/* PÔSTERES */
+
+.filme img {
+    display: block;
+
+    width: 100%;
+
+    height: 360px;
+
+    object-fit: contain;
+
+    padding: 10px;
+
+    background: rgba(255,255,255,.15);
+}
+
+
+/* =========================
+   ASSINE
+========================= */
+
+.assine {
+    padding: 70px 8%;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at 90% 80%,
+            #baff82,
+            transparent 25%
+        ),
+        linear-gradient(
+            135deg,
+            #efffdc,
+            #c8ff9d
+        );
+}
+
+.assine h2 {
+    color: #66c900;
+
+    font-size: 35px;
+
+    margin-bottom: 10px;
+}
+
+.assine > p {
+    max-width: 700px;
+
+    margin: 10px auto 40px;
+
+    color: #587542;
+}
+
+
+/* =========================
+   MOTIVOS
+========================= */
+
+.motivos {
+    display: flex;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 40px;
+}
+
+.motivos > div {
+    flex: 1;
+
+    min-width: 220px;
+
+    padding: 25px;
+
+    background: rgba(255,255,255,.65);
+
+    border-radius: 18px;
+
+    border: 1px solid #d5ffad;
+
+    text-align: left;
+
+    box-shadow:
+        0 10px 25px rgba(70,150,20,.1);
+
+    transition: .3s;
+}
+
+.motivos > div:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 15px 30px rgba(80,200,0,.2);
+}
+
+.motivos h3 {
+    margin-bottom: 10px;
+
+    color: #63c600;
+}
+
+.motivos p {
+    color: #5d7a48;
+}
+
+
+/* =========================
+   BOTÃO ASSINAR
+========================= */
+
+.botao-assinar {
+    display: inline-block;
+
+    padding: 15px 35px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #55ff00,
+            #a2ff58
+        );
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 12px;
+
+    font-weight: bold;
+
+    box-shadow:
+        0 8px 20px rgba(70,200,0,.25);
+
+    transition: .3s;
+}
+
+.botao-assinar:hover {
+    transform: scale(1.06);
+
+    box-shadow:
+        0 10px 30px rgba(70,220,0,.4);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 30px 8%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #74e52d,
+            #b9ff91
+        );
+
+    border-top: 1px solid rgba(255,255,255,.7);
+
+    text-align: center;
+}
+
+footer p {
+    color: white;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 700px) {
+
+    header {
+        min-height: 180px;
+    }
+
+    header h1 {
+        font-size: 48px;
+    }
+
+    nav ul {
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 15px;
+    }
+
+    .login,
+    .cadastro,
+    .contato {
+        padding: 25px;
+
+        margin: 40px auto;
+    }
+
+    .em-alta,
+    .assine {
+        padding: 50px 5%;
+    }
+
+    .filmes {
+        flex-direction: column;
+    }
+
+    .filme {
+        min-width: 100%;
+    }
+
+    .filme img {
+        height: 420px;
+    }
+
+    .motivos {
+        flex-direction: column;
+    }
+
+    .motivos > div {
+        min-width: 100%;
+    }
+}
