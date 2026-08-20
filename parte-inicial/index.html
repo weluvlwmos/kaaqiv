@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>KAAQVI</h1>
+    </header>
+
+    <main>
+
+        <nav>
+            <ul>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#cadastro">Cadastro</a></li>
+            </ul>
+        </nav>
+
+        <div class="login" id="login">
+            <h2>Login</h2>
+
+            <form>
+                <label for="email-login">Email:</label>
+                <input 
+                    type="email" 
+                    id="email-login" 
+                    name="email-login" 
+                    placeholder="Digite seu email ou número de telefone" 
+                    required
+                >
+
+                <label for="senha-login">Password:</label>
+                <input 
+                    type="password" 
+                    id="senha-login" 
+                    name="senha-login" 
+                    placeholder="Digite sua senha" 
+                    required
+                >
+
+                <button type="submit">Login</button>
+                <p><a href="#">Esqueceu sua senha?</a></p>
+                <p>ou</p>
+                <button type="button">usar codigo de login</button>
+            </form>
+
+            <p>Novo por aqui? <a href="#cadastro">assine agora</a></p>
+        </div>
+<section class="em-alta">
+    <h2>Em alta</h2>
+    <p>Os filmes que todo mundo está assistindo.</p>
+
+    <div class="filmes">
+
+        <div class="filme">
+            <h3>Homem aranha: Um novo dia</h3>
+            <img src="img/filme1.jpg" alt="Pôster do filme">
+           
+        </div>
+
+        <div class="filme">
+            <h3>Backrooms Um Não-Lugar</h3>
+            <img src="img/filme2.jpg" alt="Pôster do filme">
+            
+        </div>
+
+        <div class="filme">
+            <h3>Reflexões de um liquidificador</h3>
+            <img src="img/filme3.jpg" alt="Pôster do filme">
+         
+        </div>
+
+        <div class="filme">
+            <h3>Soul Eater</h3>
+            <img src="img/filme4.jpg" alt="Pôster do filme">
+    
+        </div>
+
+    </div>
+</section>
+
+
+<section class="assine">
+    <h2>Mais motivos para assinar</h2>
+
+    <p>
+        Assine agora e tenha acesso a filmes, séries e conteúdos
+        exclusivos em um só lugar.
+    </p>
+
+    <div class="motivos">
+        <div>
+            <h3>Catálogo completo</h3>
+            <p>Tenha acesso a diversos filmes e séries.</p>
+        </div>
+
+        <div>
+            <h3>Sem anúncios</h3>
+            <p>Assista aos seus conteúdos sem interrupções.</p>
+        </div>
+
+        <div>
+            <h3>Conteúdo exclusivo</h3>
+            <p>Confira conteúdos disponíveis apenas para assinantes.</p>
+        </div>
+
+        <div>
+            <h3>Assista onde e quando    quiser</h3>
+            <p>Tenha acesso pelo computador, celular ou tablet.</p>
+        </div>
+    </div>
+
+    <a href="cadastro.html" class="botao-assinar">Assinar agora</a>
+</section>
+
+        <div class="cadastro" id="cadastro">
+            <h2>Cadastro</h2>
+
+            <form>
+                <label for="nome-cadastro">Nome:</label>
+                <input 
+                    type="text" 
+                    id="nome-cadastro" 
+                    name="nome-cadastro" 
+                    placeholder="Digite seu nome" 
+                    required
+                >
+
+                <label for="email-cadastro">Email:</label>
+                <input 
+                    type="email" 
+                    id="email-cadastro" 
+                    name="email-cadastro" 
+                    placeholder="Digite seu email" 
+                    required
+                >
+
+                <label for="senha-cadastro">Password:</label>
+                <input 
+                    type="password" 
+                    id="senha-cadastro" 
+                    name="senha-cadastro" 
+                    placeholder="Digite sua senha" 
+                    required
+                >
+
+                <button type="submit">Cadastrar</button>
+            </form>
+
+            <p>Já tem uma conta? <a href="#login">Faça login</a></p>
+        </div>
+        <div class="contato" id="contato">
+            <h2>Contato</h2>
+
+            <form>
+                <label for="nome-contato">Nome:</label>
+                <input 
+                    type="text" 
+                    id="nome-contato" 
+                    name="nome-contato" 
+                    placeholder="Digite seu nome" 
+                    required
+                >
+
+                <label for="email-contato">Email:</label>
+                <input 
+                    type="email" 
+                    id="email-contato" 
+                    name="email-contato" 
+                    placeholder="Digite seu email" 
+                    required
+                >
+
+                <label for="mensagem-contato">Mensagem:</label>
+                <textarea 
+                    id="mensagem-contato" 
+                    name="mensagem-contato" 
+                    placeholder="Digite sua mensagem" 
+                    required
+                ></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        <footer>
+            <p>&copy; 2024 KAAQVI. Todos os direitos reservados.</p>
+        </footer>
+    </main>
+    
+
+</body>
+
+</html>
